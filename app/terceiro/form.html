@@ -1,0 +1,58 @@
+<div role="form">
+  <div class="box box-solid box-default">
+    <div class="box-body">
+    
+      <field id="terceiroNome" label="Nome" model="terceiro.nome"
+          placeholder="Informe o Nome" grid="12 6 4" readonly="tabDelete"></field>
+      
+      <field id="terceiroCPF" label="CPF" model="terceiro.cpf"
+          placeholder="Informe o CPF" grid="12 6 4" readonly="tabDelete"></field>
+
+      <field id="terceiroDisponibilidade" label="Status" model="terceiro.disponibilidade"
+          placeholder="Informe ATIVO ou INATIVO" grid="12 6 4" readonly="tabDelete"></field>
+
+      <field id="terceiroRG" label="RG" model="terceiro.rg"
+          placeholder="Informe o RG" grid="12 6 4" readonly="tabDelete"></field>
+
+      <field id="terceiroDRT" label="DRT" model="terceiro.drt"
+          placeholder="Informe o DRT" grid="12 6 4" readonly="tabDelete"></field>
+
+      <field id="terceiroCNV" label="CNV" model="terceiro.cnv"
+          placeholder="Informe o CNV" grid="12 6 4" readonly="tabDelete"></field>
+
+      <field id="terceiroCursoSeguranca" label="Segurança" model="terceiro.cursoSeguranca" type="date"
+          placeholder="Informe a data do curso" grid="12 6 4" readonly="tabDelete"></field>
+
+      <field id="terceiroGrandesEventos" label="Grandes Eventos" model="terceiro.grandesEventos"
+          placeholder="Informe SIM ou NÃO" grid="12 6 4" readonly="tabDelete"></field>
+
+    </div>
+  </div>
+
+  <div class="box box-solid box-default">
+    <div class="box-body">
+        <field id="terceiroTelefone" label="Telefone" model="terceiro.telefone"
+            placeholder="Insira o telefone" grid="12 6 4" readonly="tabDelete"></field>
+
+        <field id="terceiroTelefone2" label="Telefone 2" model="terceiro.telefone2"
+            placeholder="Telefone para recado" grid="12 6 4" readonly="tabDelete"></field>
+    </div>
+  </div>
+
+  <div class="box box-solid box-default">
+    <div class="box-body">
+        <field id="terceiroOcupacoes" label="Ocupações" model="terceiro.ocupacoes"
+            placeholder="Selecione as ocupações" grid="12 6 4" readonly="tabDelete"></field>
+    </div>
+  </div>
+
+  <div class="box-footer">
+    <button class="btn btn-primary" ng-click="createTerceiro()"
+         ng-if="tabCreate">Incluir</button>
+    <button class="btn btn-info" ng-click="updateTerceiro()"
+         ng-if="tabUpdate">Alterar</button>
+    <button class="btn btn-danger" ng-click="deleteTerceiro()"
+         ng-if="tabDelete">Excluir</button>
+    <button class="btn btn-default" ng-click="cancel()" ng-if="tabUpdate || tabDelete">Cancelar</button>
+  </div>
+</div>

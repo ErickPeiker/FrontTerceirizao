@@ -1,0 +1,20 @@
+<content-header name="Dashboard"></content-header>
+
+<section class="content" ng-controller="DashboardCtrl as dashboard">
+  <div class="row">
+    <value-box grid="1"></value-box>
+    <value-box grid="5" color-class="bg-yellow" icon-class="fa fa-ban"
+      value="7" text="Vencimento de Cursos"></value-box>
+    <value-box grid="5" color-class="bg-blue" icon-class="fa fa-calendar"
+      value="2" text="Próximos Eventos (7 dias)"></value-box>
+    <value-box grid="1"></value-box>
+  </div>
+  <div class="row">  
+    <value-box grid="1"></value-box>
+    <value-box grid="5" color-class="bg-green" icon-class="fa fa-money"
+      value="R$ {{ dashboard.faturamento | number: 2  }}" text="Faturamento Mensal"></value-box>
+    <value-box grid="5" color-class="bg-red" icon-class="fa fa-exclamation"
+      value="R$ {{ dashboard.gastos | number: 2  }}" text="Gastos Mensal"></value-box>
+    <value-box grid="1"></value-box>
+  </div>
+</section>
