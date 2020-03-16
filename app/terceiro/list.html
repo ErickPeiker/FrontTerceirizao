@@ -11,7 +11,7 @@
     <tbody>
       <tr ng-repeat="terceiro in terceiros">
         <td>{{:: terceiro.nome }}</td>
-        <td>({{:: terceiro.telefones[0].ddd }}) - {{:: terceiro.telefones[0].numTelefone }}</td>
+        <td>({{:: terceiro.telefones[0].ddd }}) - {{:: terceiro.telefones[0].numTelefone }} ou ({{:: terceiro.telefones[1].ddd }}) - {{:: terceiro.telefones[1].numTelefone }}</td>
         <td>{{:: terceiro.ocupacoes[0] }}</td>
         <td style="width:100px;">
           <button class="btn btn-warning" ng-click="showTabUpdate(terceiro)"><i class="fa fa-pencil"></i></button>

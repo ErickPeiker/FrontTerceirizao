@@ -10,6 +10,13 @@ angular.module('primeiraApp').controller('TerceiroCtrl', [
 
 function TerceiroController($scope, $http, $location, msgs, tabs, consts) {
 
+  $scope.grandesEventosTerceiros = [{id:0, 'name':'Não'}, {id: 1, name: 'Sim'}]
+  $scope.statusTerceiros = [{id:0, 'name':'Inativo'}, {id: 1, name: 'Ativo'}]
+  $scope.ocupacoesTerceiros = [{id:0, name:'Vigilante'}, 
+                                {id: 1, name: 'Cozinheiro'},
+                                {id: 2, name: 'Recepcionista'},
+                                {id: 3, name: 'Bilhetagem'}]
+
   $scope.getTerceiros = function() {
     const page = parseInt($location.search().page) || 1
     const url = `${consts.apiUrl}/terceiro`
