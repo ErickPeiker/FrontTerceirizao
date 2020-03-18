@@ -2,22 +2,24 @@
   <table class="table">
     <thead>
       <tr>
+        <th>CNPJ</th>
         <th>Nome</th>
+        <th>Administrador</th>
         <th>Telefone</th>
-        <th>Ocupações</th>
         <th>Ações</th>
       </tr>
     </thead>
     <tbody>
-      <!-- <tr ng-repeat="terceiro in terceiros">
-        <td>{{:: terceiro.nome }}</td>
-        <td>({{:: terceiro.telefones[0].ddd }}) - {{:: terceiro.telefones[0].numTelefone }} ou ({{:: terceiro.telefones[1].ddd }}) - {{:: terceiro.telefones[1].numTelefone }}</td>
-        <td>{{:: terceiro.ocupacoes[0] }}</td>
-        <td style="width:100px;">
-          <button class="btn btn-warning" ng-click="showTabUpdate(terceiro)"><i class="fa fa-pencil"></i></button>
-          <button class="btn btn-danger" ng-click="showTabDelete(terceiro)"><i class="fa fa-trash-o"></i></button>
-        </td>
-      </tr> -->
+    	<tr ng-repeat="empresa in empresas">
+			<td>{{:: empresa.cnpj }}</td>	
+			<td>{{:: empresa.nomeFantasia }}</td>	
+			<td>{{:: empresa.administrador }}</td>	
+			<td>({{:: empresa.telefones[0].ddd}}) {{:: empresa.telefones[0].numTelefone}}</td>	
+			<td style="width:100px;">
+				<button class="btn btn-warning" ng-click="showTabUpdate(empresa)"><i class="fa fa-pencil"></i></button>
+				<button class="btn btn-danger" ng-click="showTabDelete(empresa)"><i class="fa fa-trash-o"></i></button>
+			</td>
+      	</tr>
     </tbody>
   </table>
 </div>

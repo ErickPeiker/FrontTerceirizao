@@ -7,6 +7,7 @@ angular.module('primeiraApp')
 
 function DashboardController($http, consts) {
   const vm = this
+  
   vm.getSummary = function() {
 	
 	vm.faturamento = 40000
@@ -14,7 +15,7 @@ function DashboardController($http, consts) {
 
     const url = `${consts.apiUrl}/dashboard`;
     $http.get(url).then(function(response) {
-		console.log(response.data);
+		  console.log(response.data);
     })
   }
 

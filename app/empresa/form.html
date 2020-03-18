@@ -6,53 +6,17 @@
     
     <div class="box-body">
       
-      <field id="terceiroNome" label="Nome" model="terceiro.nome"
-          placeholder="Informe o Nome" grid="12 6 4" readonly="tabDelete"></field>
+      <field id="empresaRazaoSocial" label="Razão Social" model="empresa.razaoSocial"
+          placeholder="Informe a Razão Social" grid="12 6 6" readonly="tabDelete"></field>
+
+      <field id="empresaNomeFantasia" label="Nome Fantasia" model="empresa.nomeFantasia"
+          placeholder="Informe o Nome" grid="12 6 6" readonly="tabDelete"></field>
+
+      <field id="empresaAdministrador" label="Adminisrtador" model="empresa.administrador"
+          placeholder="Informe o nome do administrador" grid="12 6 6" readonly="tabDelete"></field>
       
-      <field id="terceiroCPF" label="CPF" model="terceiro.cpf"
-          placeholder="Informe o CPF" grid="12 6 4" readonly="tabDelete"></field>
-
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="form-group">
-          <label for="terceiroDisponibilidade">Status</label>
-          <select id="terceiroDisponibilidade"
-            class="form-control select2" 
-            ng-options="sts.id as sts.name for sts in statusTerceiros"
-            ng-model="terceiro.disponibilidade" 
-            ng-readonly="tabDelete">
-          </select>
-        </div>
-      </div>
-
-      <!--<field id="terceiroDisponibilidade" label="Status" model="terceiro.disponibilidade"
-          placeholder="Informe ATIVO ou INATIVO" grid="12 6 4" readonly="tabDelete"></field>-->
-
-      <field id="terceiroRG" label="RG" model="terceiro.rg"
-          placeholder="Informe o RG" grid="12 6 4" readonly="tabDelete"></field>
-
-      <field id="terceiroDRT" label="DRT" model="terceiro.drt"
-          placeholder="Informe o DRT" grid="12 6 4" readonly="tabDelete"></field>
-
-      <field id="terceiroCNV" label="CNV" model="terceiro.cnv"
-          placeholder="Informe o CNV" grid="12 6 4" readonly="tabDelete"></field>
-
-      <field id="terceiroCursoSeguranca" label="Segurança" model="terceiro.cursoSeguranca" type="date"
-          placeholder="Informe a data do curso" grid="12 6 4" readonly="tabDelete"></field>
-
-      <!--<field id="terceiroGrandesEventos" label="Grandes Eventos" model="terceiro.grandesEventos"
-          placeholder="Informe SIM ou NÃO" grid="12 6 4" readonly="tabDelete"></field>-->
-
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="form-group">
-          <label for="terceiroGrandesEventos">Grandes Eventos</label>
-          <select id="terceiroGrandesEventos"
-            class="form-control select2" 
-            ng-options="ge.id as ge.name for ge in grandesEventosTerceiros"
-            ng-model="terceiro.grandesEventos" 
-            ng-readonly="tabDelete">
-          </select>
-        </div>
-      </div>
+      <field id="empresaCNPJ" label="CNPJ" model="empresa.cnpj"
+          placeholder="Informe o CNPJ" grid="12 6 6" readonly="tabDelete"></field>
 
     </div>
   </div>
@@ -63,11 +27,11 @@
     </div>
 
     <div class="box-body">
-        <field id="terceiroTelefone" label="Telefone" model="terceiro.telefone"
+        <field id="empresaTelefone" label="Telefone" model="empresa.telefone"
             placeholder="Insira o telefone" grid="12 6 4" readonly="tabDelete"></field>
 
         <field id="
-        " label="Telefone 2" model="terceiro.telefone2"
+        " label="Telefone 2" model="empresa.telefone2"
             placeholder="Telefone para recado" grid="12 6 4" readonly="tabDelete"></field>
     </div>
   </div>
@@ -78,59 +42,36 @@
     </div>
 
     <div class="box-body">
-        <field id="terceiroCep" label="CEP" model="terceiro.cep"
+        <field id="empresaCep" label="CEP" model="empresa.cep"
             placeholder="Insira o CEP" grid="12 6 4" readonly="tabDelete"></field>
 
-        <field id="terceiroEstado" label="Estado" model="terceiro.estado"
+        <field id="empresaEstado" label="Estado" model="empresa.estado"
             placeholder="Insira o Estado" grid="12 6 4" readonly="tabDelete"></field>
 
-        <field id="terceiroCidade" label="Cidade" model="terceiro.cidade"
+        <field id="empresaCidade" label="Cidade" model="empresa.cidade"
             placeholder="Insira a Cidade" grid="12 6 4" readonly="tabDelete"></field>
 
-        <field id="terceiroBairro" label="Bairro" model="terceiro.bairro"
+        <field id="empresaBairro" label="Bairro" model="empresa.bairro"
             placeholder="Insira o Bairro" grid="12 6 4" readonly="tabDelete"></field>
       
-        <field id="terceiroRua" label="Rua" model="terceiro.rua"
+        <field id="empresaRua" label="Rua" model="empresa.rua"
             placeholder="Insira a Rua" grid="12 6 4" readonly="tabDelete"></field>
 
-        <field id="terceiroNumero" label="Nº" model="terceiro.numero"
+        <field id="empresaNumero" label="Nº" model="empresa.numero"
             placeholder="Insira o Nº" grid="12 6 4" readonly="tabDelete"></field>
 
-        <field id="terceiroComplemento" label="Complemento" model="terceiro.complemento"
+        <field id="empresaComplemento" label="Complemento" model="empresa.complemento"
             placeholder="Insira o Complemento" grid="12 6 4" readonly="tabDelete"></field>
 
     </div>
   </div>
 
-  <div class="box box-solid box-default">
-    <div class="box-header with-border">
-      <h3 class="box-title">Serviços</h3>
-    </div>
-
-    <div class="box-body">
-        <!--<field id="terceiroOcupacoes" label="Ocupações" model="terceiro.ocupacoes"
-            placeholder="Selecione as ocupações" grid="12 6 4" readonly="tabDelete"></field>-->
-
-        <div class="col-xs-12">
-          <div class="form-group">
-            <label for="terceiroOcupacoes">Selecione as ocupações</label>
-            <select id="terceiroOcupacoes"
-              class="form-control select2" 
-              ng-options="ocp.id as ocp.name for ocp in ocupacoesTerceiros"
-              ng-model="terceiro.ocupacoes" 
-              ng-readonly="tabDelete">
-            </select>
-          </div>
-        </div>
-    </div>
-  </div>
-
   <div class="box-footer">
-    <button class="btn btn-primary" ng-click="createTerceiro()"
+    <button class="btn btn-primary" ng-click="createEmpresa()"
          ng-if="tabCreate">Incluir</button>
-    <button class="btn btn-info" ng-click="updateTerceiro()"
+    <button class="btn btn-info" ng-click="updateEmpresa()"
          ng-if="tabUpdate">Alterar</button>
-    <button class="btn btn-danger" ng-click="deleteTerceiro()"
+    <button class="btn btn-danger" ng-click="deleteEmpresa()"
          ng-if="tabDelete">Excluir</button>
     <button class="btn btn-default" ng-click="cancel()" ng-if="tabUpdate || tabDelete">Cancelar</button>
   </div>
